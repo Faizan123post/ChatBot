@@ -1,0 +1,63 @@
+<!-- temphlates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDP Documentation Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>CDP Documentation Chatbot</h1>
+            <div class="platforms">
+                <span class="platform segment">Segment</span>
+                <span class="platform mparticle">mParticle</span>
+                <span class="platform lytics">Lytics</span>
+                <span class="platform zeotap">Zeotap</span>
+            </div>
+        </header>
+        
+        <main>
+            <div class="chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message system">
+                        <div class="message-content">
+                            <p>Hello! I am your CDP documentation assistant. Ask me how to perform tasks in Segment, mParticle, Lytics, or Zeotap.</p>
+                            <p>Try questions like:</p>
+                            <ul>
+                                <li>"How do I set up a new source in Segment?"</li>
+                                <li>"How can I create a user profile in mParticle?"</li>
+                                <li>"How do I build an audience segment in Lytics?"</li>
+                                <li>"How can I integrate my data with Zeotap?"</li>
+                            </ul>
+                            <p>You can also ask me to compare features across CDPs!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="input-container">
+                    <form id="query-form">
+                        <input type="text" id="query-input" placeholder="Ask a how-to question about any CDP..." autocomplete="off">
+                        <button type="submit" id="send-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>CDP Documentation Chatbot | 
+                <button class="refresh-button" id="refresh-docs">Refresh Documentation</button>
+            </p>
+        </footer>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 
 
-### Option 1: Standard Setup
+# Option 1: Standard Setup
 
 1. **Clone the repository or create the project structure**
 
@@ -46,23 +46,22 @@
    When the application runs for the first time, it will automatically start scraping the documentation from the CDP websites. This may take some time depending on your internet connection.
 
 
-## Option 2: Docker Setup
+### Option 2: Docker Setup
 
-# Create the same project structure as in Option 1.
+### Create the same project structure as in Option 1.
 
-# Create a Dockerfile using the provided code.
+### Create a Dockerfile using the provided code.
 
-# Build the Docker image:
+### Build the Docker image:
 bashCopydocker build -t cdp-chatbot .
 
-# Run the container:
+### Run the container:
 bashCopydocker run -p 8000:8000 cdp-chatbot
 
-# Access the chatbot at http://localhost:8000
+### Access the chatbot at http://localhost:8000
 
-#  Features Implemented
 
-# "How-to" Questions:
+### "How-to" Questions:
  The chatbot understands and responds to user questions about how to perform specific tasks in each CDP.
 Extract Information from Documentation: The system scrapes and indexes documentation from all four CDPs, preserving the context and structure for accurate retrieval.
 Handle Variations in Questions: The solution uses semantic search and NLP to understand question variations and properly identifies questions unrelated to CDPs.
